@@ -6,5 +6,7 @@ map('n', '<leader>ca', '<Cmd>lua vim.lsp.buf.code_action()<CR>',opts)
 map('n', '<leader>bn', '<Cmd>bnext<CR>',opts)
 map('n', '<leader>bp', '<Cmd>bprev<CR>',opts)
 
-vim.cmd.colorscheme "catppuccin"
-vim.api.nvim_set_option("clipboard","unnamedplus");
+vim.cmd.colorscheme "gruvbox";
+vim.opt.foldmethod = "indent";
+vim.opt.foldenable = false;
+vim.opt.colorcolumn = "81";
