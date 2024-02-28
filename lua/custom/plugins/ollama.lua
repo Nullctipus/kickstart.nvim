@@ -27,7 +27,7 @@ return {
 
   ---@type Ollama.Config
   opts = {
-	model = "codellama-13b",
+	model = "codellama:13b-instruct-q5_K_M",
 	url = "http://127.0.0.1:11434",
     -- your configuration overrides
   }
