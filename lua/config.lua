@@ -5,7 +5,7 @@ vim.keymap.set('n', '<leader>bp', '<Cmd>BufferPrevious<CR>', { noremap = true, s
 vim.keymap.set('n', '<leader>bc', '<Cmd>BufferClose<CR>', { noremap = true, silent = true, desc = '[B]uffer [C]lose' })
 vim.keymap.set('n', '<leader>f', '<Cmd>Format<CR>', { noremap = true, silent = true, desc = '[F]ormat' })
 
-vim.cmd.colorscheme 'gruvbox'
+vim.cmd.colorscheme 'rose-pine'
 vim.opt.foldmethod = 'indent'
 vim.opt.foldenable = false
 vim.opt.colorcolumn = '81'
