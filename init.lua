@@ -624,7 +624,8 @@ local servers = {
       },
     },
   },
-  csharp_ls = {},
+  omnisharp = {},
+  -- csharp_ls = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   jdtls = {},
@@ -637,6 +638,7 @@ local servers = {
       -- diagnostics = { disable = { 'missing-fields' } },
     },
   },
+  zls = {},
 }
 
 -- Setup neovim lua configuration
