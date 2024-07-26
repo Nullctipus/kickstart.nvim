@@ -629,6 +629,7 @@ local servers = {
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   jdtls = {},
+  taplo = {},
 
   lua_ls = {
     Lua = {
@@ -638,7 +639,6 @@ local servers = {
       -- diagnostics = { disable = { 'missing-fields' } },
     },
   },
-  zls = {},
 }
 
 -- Setup neovim lua configuration
@@ -665,7 +665,15 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
-
+-- zls
+require('lspconfig').zls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  cmd = { 'zls' },
+  filetypes = { 'zig', 'zir' },
+  root_dir = require('lspconfig').util.root_pattern('zls.json', 'build.zig', '.git'),
+  single_file_support = true,
+}
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
 local cmp = require 'cmp'
