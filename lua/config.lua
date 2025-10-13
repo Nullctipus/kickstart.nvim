@@ -5,6 +5,7 @@ vim.keymap.set('n', '<leader>bp', '<Cmd>BufferPrevious<CR>', { noremap = true, s
 vim.keymap.set('n', '<leader>bc', '<Cmd>BufferClose<CR>', { noremap = true, silent = true, desc = '[B]uffer [C]lose' })
 vim.keymap.set('n', '<leader>f', '<Cmd>Format<CR>', { noremap = true, silent = true, desc = '[F]ormat' })
 vim.keymap.set('n', '<leader>m', '<Cmd>make<CR>', { noremap = true, silent = false, desc = '[M]ake' })
+vim.keymap.set('n', '<leader>ng', '<Cmd>Neogen<CR>', { noremap = true, silent = true, desc = '[N]eo[g]en' })
 
 vim.cmd.colorscheme 'rose-pine'
 vim.opt.foldmethod = 'indent'
@@ -13,3 +14,5 @@ vim.opt.colorcolumn = '81'
 
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+
+require('neogen').setup { snippet_engine = 'luasnip' }
